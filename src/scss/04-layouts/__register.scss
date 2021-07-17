@@ -89,6 +89,9 @@
                         color: $primary-black;
                         border: 1px solid #aaa9a9;
                     }
+                    input[type="checkbox"]{
+                        width: 15px;
+                    }
                     &.last{
                         margin-bottom: 20px;
                     }
@@ -101,10 +104,37 @@
                         .last{
                             margin-right: 0;
                         }
+                        @media only screen and (max-width: 300px) {
+                            &{
+                                flex-direction: column;
+                                input{
+                                    margin-right: 0;
+                                    margin-bottom: 10px;
+                                    &:nth-child(2){
+                                        margin: 0;
+                                        // background-color: red;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 .last_control{
                     margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    input{
+                        margin-right: 10px;
+                    }
+                    label{
+                        font-size: 12px;
+                        color: #696969;
+                    }
+                    p{
+                        text-align: start;
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
                 }
                 .signup_sbt_btn{
                     width: 100%;
@@ -138,6 +168,13 @@
             }
         }
     }
-
+    @media only screen and (max-width: 380px) {
+        &{
+            width: 90%;
+            &_container{
+                width: 90%;
+            }
+        }
+    }
 
 }

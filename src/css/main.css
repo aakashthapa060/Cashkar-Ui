@@ -288,6 +288,10 @@ a {
   border: 1px solid #aaa9a9;
 }
 
+.register_form_container .actual_form form .form_control input[type="checkbox"] {
+  width: 15px;
+}
+
 .register_form_container .actual_form form .form_control.last {
   margin-bottom: 20px;
 }
@@ -305,8 +309,38 @@ a {
   margin-right: 0;
 }
 
+@media only screen and (max-width: 300px) {
+  .register_form_container .actual_form form .form_control.double {
+    flex-direction: column;
+  }
+  .register_form_container .actual_form form .form_control.double input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .register_form_container .actual_form form .form_control.double input:nth-child(2) {
+    margin: 0;
+  }
+}
+
 .register_form_container .actual_form form .last_control {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.register_form_container .actual_form form .last_control input {
+  margin-right: 10px;
+}
+
+.register_form_container .actual_form form .last_control label {
+  font-size: 12px;
+  color: #696969;
+}
+
+.register_form_container .actual_form form .last_control p {
+  text-align: start;
+  font-size: 11px;
+  line-height: 15px;
 }
 
 .register_form_container .actual_form form .signup_sbt_btn {
@@ -338,6 +372,15 @@ a {
 
 .register_form_container .more_info a:last-child {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 380px) {
+  .register_form {
+    width: 90%;
+  }
+  .register_form_container {
+    width: 90%;
+  }
 }
 
 .helo {
