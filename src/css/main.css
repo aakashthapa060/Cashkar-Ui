@@ -383,6 +383,267 @@ a {
   }
 }
 
+body {
+  background-color: #f1f1f1;
+}
+
+.dash_board {
+  display: flex;
+}
+
+.dash_board .dashboard_nav {
+  overflow-x: hidden;
+  position: relative;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.dash_board .dashboard_nav_header {
+  width: 100%;
+  height: 70px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.dash_board .dashboard_nav_header .logo {
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #242424;
+}
+
+.dash_board .dashboard_nav .nav_items {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  height: auto;
+}
+
+.dash_board .dashboard_nav .nav_items .nav_links {
+  width: 100%;
+  height: auto;
+  padding: 10px  20px;
+}
+
+.dash_board .dashboard_nav .nav_items .nav_links .title {
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.dash_board .dashboard_nav .nav_items .nav_links .title h2 {
+  font-size: 14px;
+  color: #a1a1a1;
+}
+
+.dash_board .dashboard_nav .nav_items .nav_links ul li {
+  margin-bottom: 5px;
+}
+
+.dash_board .dashboard_nav .nav_items .nav_links ul li a {
+  display: flex;
+  font-size: 15px;
+  color: #242424;
+  padding: 5px 5px;
+}
+
+.dash_board .dashboard_nav .nav_items .nav_links ul li a:hover {
+  background-color: #f1f1f1;
+}
+
+.dash_board .dashboard_nav .current_account {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  margin-bottom: auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.dash_board .dashboard_nav .current_account .user_info {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  margin-bottom: 30px;
+  background-color: #242424;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.dash_board .dashboard_nav .current_account .user_info .wrapper {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.dash_board .dashboard_nav .current_account .user_info .wrapper .user_img {
+  position: relative;
+  left: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dash_board .dashboard_nav .current_account .user_info .wrapper .user_img img {
+  width: 100%;
+}
+
+.dash_board .dashboard_nav .current_account .user_info .wrapper .user_content {
+  width: auto;
+  height: auto;
+  margin-left: 15px;
+  text-align: justify;
+  color: #fff;
+}
+
+.dash_board .dashboard_nav .current_account .user_info .wrapper .user_content h2 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.dash_board .dashboard_nav .current_account .user_info .wrapper .user_content p {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.dash_board .top_nav {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+
+.dash_board .top_nav .wrapper {
+  margin: 0 auto;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dash_board .top_nav .wrapper .nav_items {
+  width: auto;
+  height: auto;
+}
+
+.dash_board .top_nav .wrapper .nav_items .ham_burger_menu {
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+}
+
+.dash_board .top_nav .wrapper .nav_items .ham_burger_menu div {
+  width: 25px;
+  height: 2px;
+  box-sizing: border-box;
+  background-color: #242424;
+  margin-bottom: 3px;
+}
+
+.dash_board .top_nav .wrapper .nav_items .ham_burger_menu div:last-child {
+  margin-bottom: 0px;
+  width: 12.5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dash_board .top_nav .wrapper .nav_items .ham_burger_menu {
+    display: block;
+  }
+}
+
+.dash_board .top_nav .wrapper .nav_items .title h2 {
+  font-size: 20px;
+  color: #242424;
+}
+
+.dash_board .top_nav .wrapper .user_content {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.dash_board .top_nav .wrapper .user_content .user_info {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dash_board .top_nav .wrapper .user_content .user_info .user_img {
+  width: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.dash_board .top_nav .wrapper .user_content .user_info .user_img img {
+  width: 35px;
+}
+
+.dash_board .top_nav .wrapper .user_content .user_info span {
+  margin-left: 5px;
+  color: #696969;
+}
+
+.dash_board .top_nav .wrapper .user_content .profile_drop_down {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 150px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.dash_board .top_nav .wrapper .user_content .profile_drop_down .container {
+  width: 120px;
+  margin: 20px auto;
+}
+
+.dash_board .top_nav .wrapper .user_content .profile_drop_down .container h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #242424;
+}
+
+.dash_board .top_nav .wrapper .user_content .profile_drop_down .container ul li a {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: #242424;
+  border-radius: 5px;
+  transition: .25s ease;
+}
+
+.dash_board .top_nav .wrapper .user_content .profile_drop_down .container ul li a:last-child {
+  margin-bottom: 0;
+}
+
+.dash_board .top_nav .wrapper .user_content .profile_drop_down .container ul li a:hover {
+  background-color: #f1f1f1;
+}
+
 .helo {
   width: 100%;
   height: 200px;
