@@ -27,7 +27,6 @@ function TopNavExtraMenu(){
         else if(accountSetting_open === true){
             $(".top_nav .wrapper .user_content .profile_drop_down").fadeOut()
             accountSetting_open = false
-
         }
     })
 }
