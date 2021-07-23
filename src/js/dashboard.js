@@ -1,7 +1,7 @@
 let sideNavOpen = false;
 function sideNavOpenClose(){
-    let sideNav = $(".dash_board .dashboard_nav");
-    let hamBurger = $(".dash_board .top_nav .wrapper .ham_burger_menu")
+    let sideNav = $(".container .dashboard_nav");
+    let hamBurger = $(".container .top_nav .wrapper .ham_burger_menu")
     hamBurger.click(() => {
         if(sideNavOpen === true){
             sideNav.show()
