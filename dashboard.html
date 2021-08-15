@@ -10,171 +10,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</body>
-<div class="container">
-    <nav class="dashboard_nav">
-        <div class="dashboard_nav_header">
-            <div class="logo">
-                
-            </div>
-        </div>
-        <div class="nav_items ">
-            <div class="nav_links first">
-                <div class="title">
-                    <h2>Menu</h2>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </body>
+    <nav id="dashboard_nav">
+        <div class="wrapper">
+            <div class="nav-box first">
+                <div class="hamburger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Tabels</a></li>
-                    <li><a href="#">Sell</a></li>
-                </ul>
-            </div>
-            <div class="nav_links center">
-                <div class="title">
-                    <h2>Shortcuts</h2>
+                <div class="logo">
+                    <img src="./src/img/logo.png" alt="">
                 </div>
-                <ul>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Logout</a></li>
-    
-                </ul>
             </div>
-        </div>
-        <div class="current_account">
-    
-            <div class="user_info">
-                <div class="wrapper">
-                    <div class="user_img">
+            <div class="nav_items second">
+                <div class="profile-info">
+                    <div class="profile-img">
                         <img src="./src/img/152566011_1064560074027554_4585919329927172547_n.jpg" alt="">
                     </div>
-                    <div class="user_content">
-                        <h2>Aakash Thapa</h2>
-                        <p>@aakash</p>
-                    </div>
                 </div>
+                <div class="nav-drop">
+                    <ul class="wrapper">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+
+                        <li><a href="#">Logout <span><i class='bx bx-log-out'></i></span></a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
+
     </nav>
-    <div class="main_content">
-        <nav class="top_nav">
-            <div class="wrapper">
-                <div class="nav_items first">
-                    <div class="ham_burger_menu">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-    
-                    </div>
-                    <div class="title">
-                        <h2>Dashboard</h2>
-                    </div>
-                </div>
-                <div class="user_content">
-                    <div class="user_info">
-    
-                        <div class="user_img">
-                            <img src="./src/img/152566011_1064560074027554_4585919329927172547_n.jpg" alt="">
-                        </div>
-                        <span><i class="fas fa-sort-down"></i></span>
-                    </div>
-                    <div class="profile_drop_down">
-                        <div class="container">
-                            <h2>Account Settings</h2>
-                            <ul>
-                                <li><a href="#">Profile</a></li>
-                                <li><a href="#">Logout</a></li>
-    
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    
-        <!-- Content Body -->
-        <div class="body_content">
-            <div class="wrapper">
-                <div class="info_cards">
-                    <div class="card first">
-                        <div class="card_container">
-                            <div class="card_icon success">
-                                <img src="./src/img/icons/checked.svg" alt="">
-                            </div>
-                            <div class="card_info">
-                                <div class="card_content">
-                                    <h2>10</h2>
-                                    <p>Completed</p>
+    <ul>
+        <li>aaks</li>
+        <li>aaks</li>
+        <li>aaks</li>
+        <li>aaks</li>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card second">
-                        <div class="card_container">
-                            <div class="card_icon fail">
-                                <img src="./src/img/icons/fail.svg" alt="">
-                            </div>
-                            <div class="card_info">
-                                <div class="card_content">
-                                    <h2>2</h2>
-                                    <p>Failed</p>
+    </ul>
+    <script src="src/js/dashboard.js"></script>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card third">
-                        <div class="card_container">
-                            <div class="card_icon available">
-                                <img src="./src/img/icons/stock.svg" alt="">
-                            </div>
-                            <div class="card_info">
-                                <div class="card_content">
-                                    <h2>23</h2>
-                                    <p>Orders Available</p>
+    </body>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card fourth">
-                        <div class="card_container">
-                            <div class="card_icon total">
-                                <img src="./src/img/icons/the-sum-of.svg" alt="">
-                            </div>
-                            <div class="card_info">
-                                <div class="card_content">
-                                    <h2>35</h2>
-                                    <p>Total</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <!-- Recent Orders -->
-            <div class="recent_orders">
-                <div class="title">
-                    <h2>Recent Orders</h2>
-                </div>
-                <div class="project_table">
-                    
-
-                </div>
-            </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
-
-<script src="src/js/dashboard.js"></script>
-
-</body>
 </html>

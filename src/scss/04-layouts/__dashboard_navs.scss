@@ -1,0 +1,113 @@
+#dashboard_nav{
+    width: 100%;
+    height: 60px;
+    background-color: $primary-black;
+    .wrapper{
+        position: relative;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        height: 100%;
+        @include flexbox(space-between, center,row);
+        .nav-box{
+            width: auto;
+            height: auto;
+            @include flexbox(center, center,row);
+            .hamburger-menu{
+                width: auto;
+                height: auto;
+                margin-right: 20px;
+                cursor: pointer;
+                div{
+                    width: 25px;
+                    height: 2px;
+                    background-color: #fff;
+                    margin-bottom: 4px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                        width: calc(25px / 2);
+                    }
+
+                }
+            }
+            .logo{
+                img{
+                    width: 100px;
+                }
+            }
+        }
+        .second{
+            width: auto;
+            height: auto;
+            .profile-info{
+                width: 43px;
+                height: 43px;
+                border-radius: 50%;
+                @include flexbox(center, center,row);
+                background-color: $primary-blue;
+                cursor: pointer;
+                .profile-img{
+                    width: 35px;
+                    height: 35px;
+                    overflow: hidden;
+                    border-radius: 50%;
+
+                    @include flexbox(center, center,row);
+                    img{
+                        width: 45px;
+                        
+                    }
+                }
+                
+            }
+            .nav-drop{
+                position: absolute;
+                width: 150px;
+                height: auto;
+                right: 0px;
+                top: 65px;
+                border: 1px solid rgb(51, 51, 51);
+                border-radius: 5px;
+                ul{
+                    margin: 10px auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 130px;
+                    height: auto;
+                    // border: 1px solid #000;
+
+                    li{
+                        padding: 5px 5px;
+                        // background-color: red;
+                        // display: block;
+                        width: 100%;
+                        margin-bottom: 2px;
+                        border-radius: 3px;
+                        &:last-child{
+                            background-color: $primary-black;
+                            a{
+                                color: #fff;
+                            }
+                        }
+                        &:hover{
+                            background-color: #e1e1e1;
+                        }
+                        &:last-child:hover{
+                            background-color: $primary-black;
+                        }
+
+                        a{
+                            color: $primary-black;
+                            font-size: 15px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+// Jordanhughes.co
