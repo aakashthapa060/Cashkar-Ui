@@ -415,6 +415,7 @@ a {
   height: auto;
   margin-right: 20px;
   cursor: pointer;
+  display: none;
 }
 
 #dashboard_nav .wrapper .nav-box .hamburger-menu div {
@@ -427,6 +428,12 @@ a {
 #dashboard_nav .wrapper .nav-box .hamburger-menu div:last-child {
   margin-bottom: 0px;
   width: calc(25px / 2);
+}
+
+@media only screen and (max-width: 900px) {
+  #dashboard_nav .wrapper .nav-box .hamburger-menu {
+    display: block;
+  }
 }
 
 #dashboard_nav .wrapper .nav-box .logo img {
@@ -474,6 +481,7 @@ a {
   top: 65px;
   border: 1px solid #333333;
   border-radius: 5px;
+  z-index: 3;
 }
 
 #dashboard_nav .wrapper .second .nav-drop ul {
@@ -621,6 +629,70 @@ a {
   background: #fff;
   box-shadow: 0px 0px 10px rgba(140, 140, 140, 0.487);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main_container .user-dashboard-info .card .container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_container .user-dashboard-info .card .container .card-icon {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 0px 10px 2px rgba(62, 184, 5, 0.371);
+  background-color: #3bbb00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.main_container .user-dashboard-info .card .container .card-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.main_container .user-dashboard-info .card .container .card-content {
+  color: #242424;
+}
+
+.main_container .user-dashboard-info .card .container .card-content h2 {
+  font-size: 35px;
+  margin-bottom: 7px;
+}
+
+@media only screen and (max-width: 400px) {
+  .main_container .user-dashboard-info .card .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: initial;
+  }
+  .main_container .user-dashboard-info .card .container .card-icon {
+    margin-right: 20px;
+  }
+}
+
+.main_container .user-dashboard-info .card.card2 .container .card-icon {
+  background-color: #ff4646;
+  box-shadow: 0px 0px 10px 2px rgba(255, 37, 95, 0.371);
+}
+
+.main_container .user-dashboard-info .card.card3 .container .card-icon {
+  background-color: #556fe2;
+  box-shadow: 0px 0px 10px 2px rgba(135, 91, 255, 0.371);
+}
+
+.main_container .user-dashboard-info .card.card4 .container .card-icon {
+  background-color: #7f01d8;
+  box-shadow: 0px 0px 10px 2px rgba(126, 1, 216, 0.494);
 }
 
 @media only screen and (max-width: 900px) {
