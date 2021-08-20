@@ -383,11 +383,234 @@ a {
   }
 }
 
+.main_container {
+  position: absolute;
+  left: 240px;
+  top: 60px;
+  width: calc(100% - 240px);
+  height: auto;
+  padding: 10px;
+}
+
+.main_container .user-dashboard-info {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 15px;
+  margin-bottom: 30px;
+}
+
+.main_container .user-dashboard-info .card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(140, 140, 140, 0.487);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main_container .user-dashboard-info .card .container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_container .user-dashboard-info .card .container .card-icon {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 0px 10px 2px rgba(62, 184, 5, 0.371);
+  background-color: #3bbb00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.main_container .user-dashboard-info .card .container .card-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.main_container .user-dashboard-info .card .container .card-content {
+  color: #242424;
+}
+
+.main_container .user-dashboard-info .card .container .card-content h2 {
+  font-size: 35px;
+  margin-bottom: 7px;
+}
+
+@media only screen and (max-width: 400px) {
+  .main_container .user-dashboard-info .card .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: initial;
+  }
+  .main_container .user-dashboard-info .card .container .card-icon {
+    margin-right: 20px;
+  }
+}
+
+.main_container .user-dashboard-info .card.card2 .container .card-icon {
+  background-color: #ff4646;
+  box-shadow: 0px 0px 10px 2px rgba(255, 37, 95, 0.371);
+}
+
+.main_container .user-dashboard-info .card.card3 .container .card-icon {
+  background-color: #556fe2;
+  box-shadow: 0px 0px 10px 2px rgba(135, 91, 255, 0.371);
+}
+
+.main_container .user-dashboard-info .card.card4 .container .card-icon {
+  background-color: #7f01d8;
+  box-shadow: 0px 0px 10px 2px rgba(126, 1, 216, 0.494);
+}
+
+@media only screen and (max-width: 900px) {
+  .main_container {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main_container .user-dashboard-info {
+    height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main_container .user-dashboard-info {
+    height: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.main_container .recentOrders {
+  width: 100%;
+}
+
+.main_container .recentOrders .header {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_container .recentOrders .header h2 {
+  font-size: 30px;
+  color: #242424;
+}
+
+.main_container .recentOrders .header a {
+  color: #242424;
+  font-size: 16px;
+  border-bottom: 1px solid #242424;
+}
+
+.main_container .recentOrders .content {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.main_container .recentOrders .content .card {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.main_container .recentOrders .content .card .itemImg {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.main_container .recentOrders .content .card .itemImg img {
+  width: 100%;
+}
+
+.main_container .recentOrders .content .card .itemContent .top {
+  margin-bottom: 25px;
+  color: #242424;
+}
+
+.main_container .recentOrders .content .card .itemContent .top h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.main_container .recentOrders .content .card .itemContent .top p {
+  font-size: 16px;
+}
+
+.main_container .recentOrders .content .card .itemContent .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main_container .recentOrders .content .card .itemContent .buttons .left {
+  width: auto;
+}
+
+.main_container .recentOrders .content .card .itemContent .buttons .left a {
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #556fe2;
+  border-radius: 5px;
+}
+
+.main_container .recentOrders .content .card .itemContent .buttons .left .btn2 {
+  background-color: #ff4646;
+}
+
+.main_container .recentOrders .content .card .itemContent .buttons .right a {
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #07a807;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main_container .recentOrders .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main_container .recentOrders .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
 #dashboard_nav {
   width: 100%;
   height: 60px;
   background-color: #242424;
   position: fixed;
+  z-index: 10;
 }
 
 #dashboard_nav .wrapper {
@@ -605,116 +828,9 @@ a {
   font-size: 14px;
 }
 
-.main_container {
-  position: absolute;
-  left: 240px;
-  top: 60px;
-  width: calc(100% - 240px);
-  height: auto;
-}
-
-.main_container .user-dashboard-info {
-  width: 100%;
-  height: 200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 15px;
-  padding: 10px;
-}
-
-.main_container .user-dashboard-info .card {
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  box-shadow: 0px 0px 10px rgba(140, 140, 140, 0.487);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.main_container .user-dashboard-info .card .container {
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.main_container .user-dashboard-info .card .container .card-icon {
-  width: 60px;
-  height: 60px;
-  box-shadow: 0px 0px 10px 2px rgba(62, 184, 5, 0.371);
-  background-color: #3bbb00;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  border-radius: 10px;
-}
-
-.main_container .user-dashboard-info .card .container .card-icon img {
-  width: 30px;
-  height: 30px;
-}
-
-.main_container .user-dashboard-info .card .container .card-content {
-  color: #242424;
-}
-
-.main_container .user-dashboard-info .card .container .card-content h2 {
-  font-size: 35px;
-  margin-bottom: 7px;
-}
-
-@media only screen and (max-width: 400px) {
-  .main_container .user-dashboard-info .card .container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: initial;
-  }
-  .main_container .user-dashboard-info .card .container .card-icon {
-    margin-right: 20px;
-  }
-}
-
-.main_container .user-dashboard-info .card.card2 .container .card-icon {
-  background-color: #ff4646;
-  box-shadow: 0px 0px 10px 2px rgba(255, 37, 95, 0.371);
-}
-
-.main_container .user-dashboard-info .card.card3 .container .card-icon {
-  background-color: #556fe2;
-  box-shadow: 0px 0px 10px 2px rgba(135, 91, 255, 0.371);
-}
-
-.main_container .user-dashboard-info .card.card4 .container .card-icon {
-  background-color: #7f01d8;
-  box-shadow: 0px 0px 10px 2px rgba(126, 1, 216, 0.494);
-}
-
-@media only screen and (max-width: 900px) {
-  .main_container {
-    left: 0;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .main_container .user-dashboard-info {
-    height: 400px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .main_container .user-dashboard-info {
-    height: 500px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+@media only screen and (max-width: 600px) {
+  .side_nav {
+    transform: translateX(-100%);
   }
 }
 

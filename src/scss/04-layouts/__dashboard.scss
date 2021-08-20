@@ -1,0 +1,224 @@
+.main_container {
+    position: absolute;
+    left: 240px;
+    top: 60px;
+    width: calc(100% - 240px);
+    height: auto;
+    padding: 10px;
+
+    .user-dashboard-info {
+        width: 100%;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 15px;
+        margin-bottom: 30px;
+        .card {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            box-shadow: 0px 0px 10px rgba(140, 140, 140, 0.487);
+            border-radius: 10px;
+            @include flexbox(center, center, row);
+
+            .container {
+                width: 90%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .card-icon {
+                    width: 60px;
+                    height: 60px;
+                    box-shadow: 0px 0px 10px 2px rgba(62, 184, 5, 0.371);
+                    background-color: rgb(59, 187, 0);
+                    @include flexbox(center, center, row);
+                    border-radius: 10px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .card-content{
+                    color: $primary-black;
+                    h2{
+                        font-size: 35px;
+                        margin-bottom: 7px;
+                    }
+                }
+                @media only screen and (max-width: 400px){
+                    &{
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: initial;
+                        .card-icon{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+ 
+        }
+        .card.card2{
+            .container{
+                .card-icon{
+                    background-color: $primary-red;
+                     box-shadow: 0px 0px 10px 2px rgba(255, 37, 95, 0.371);
+
+                }
+            }
+        }
+        .card.card3{
+            .container{
+                .card-icon{
+                    background-color: $primary-blue;
+                     box-shadow: 0px 0px 10px 2px rgba(135, 91, 255, 0.371);
+
+                }
+            }
+        }
+        .card.card4{
+            .container{
+                .card-icon{
+                    background-color: rgb(127, 1, 216);
+                     box-shadow: 0px 0px 10px 2px rgba(126, 1, 216, 0.494);
+
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        & {
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        & {
+            .user-dashboard-info {
+                height: 400px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+            }
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        & {
+            .user-dashboard-info {
+                height: 500px;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+
+            }
+        }
+    }
+    // Recent Order
+
+    .recentOrders{
+        width: 100%;
+        .header{
+            margin-bottom: 20px;
+
+            // border: 1px solid #000;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                font-size: 30px;
+                color: $primary-black;
+
+            }
+            a{
+                color: $primary-black;
+                font-size: 16px;
+                border-bottom: 1px solid $primary-black;
+            }
+        }
+        .content{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1rem;
+
+            .card{
+                width: 100%;
+                height: auto;
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 10px;
+                .itemImg{
+                    width: 100%;
+                    height: auto;
+                    // border: 1px solid #000;
+                    border-radius: 5px;
+                    img{
+                        width: 100%;
+                    }
+                    margin-bottom: 20px;
+                }
+                .itemContent{
+                    .top{
+                        margin-bottom: 25px;
+                        color: $primary-black;
+                        h2{
+                            font-size: 20px;
+                            margin-bottom: 10px;
+
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                    .buttons{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .left{
+                            width: auto;
+                            a{
+                                padding: 8px 12px;
+                                color: #fff;
+                                background-color: $primary-blue;
+                                border-radius: 5px;
+                            }
+                            .btn2{
+                                background-color: $primary-red;
+                            }
+                        }
+                        .right{
+                            a{
+                                padding: 8px 12px;
+                                color: #fff;
+                                background-color: $primary-green;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            @media  only screen and (max-width: 1000px) {
+                &{
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(3,1fr);
+
+                }
+            }
+            @media  only screen and (max-width: 550px) {
+                &{
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(6,1fr);
+
+                }
+            }
+        }
+    }
+}
