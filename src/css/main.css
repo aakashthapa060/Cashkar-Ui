@@ -605,6 +605,64 @@ a {
   }
 }
 
+.orderDeclineView {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.295);
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: none;
+}
+
+.orderDeclineView .container {
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.261);
+  padding: 10px;
+}
+
+.orderDeclineView .container .title {
+  margin-bottom: 20px;
+}
+
+.orderDeclineView .container .title h2 {
+  font-size: 20px;
+  color: #242424;
+  line-height: 30px;
+}
+
+.orderDeclineView .container .buttons {
+  margin-bottom: 5px;
+}
+
+.orderDeclineView .container .buttons a {
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+.orderDeclineView .container .buttons .confirmBtn {
+  background-color: #ff4646;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.orderDeclineView .container .buttons .cancleBtn {
+  background-color: gray;
+  color: #fff;
+}
+
+.orderDeclineView.orderActive {
+  display: flex;
+}
+
 #dashboard_nav {
   width: 100%;
   height: 60px;

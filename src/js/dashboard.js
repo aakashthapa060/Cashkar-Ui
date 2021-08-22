@@ -57,7 +57,21 @@ function side_nav(navOpenOrNot){
     })
 
 }
+function orderDeclinePopup(){
+    let orderDeclineBtn = document.querySelectorAll(".main_container .recentOrders .content .card .itemContent .buttons .left .btn2")
+    let orderPopUp = document.querySelector(".orderDeclineView")
+    let orderPopUpCancle = document.querySelector(".orderDeclineView .container .buttons .cancleBtn")
+    orderDeclineBtn.forEach(btn => {
+        btn.addEventListener("click", () => {
+            orderPopUp.classList.add("orderActive");
+        })
+    })
+    orderPopUpCancle.addEventListener("click", () => {
+        orderPopUp.classList.remove("orderActive")
+    })
+}
 window.addEventListener("load", () => {
     dropDownOpenClose()
     side_nav(side_nav_open)
+    orderDeclinePopup()
 })
