@@ -1,0 +1,139 @@
+.main_container{
+    .item_details{
+        width: 100%;
+        height: auto;
+        .item-detail{
+            display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            width: 100%;
+            height: auto;
+            .item-img{
+                width: 500px;
+                img{
+                    width: 100%;
+                }
+            }
+            .item-content{
+                position: relative;
+                width: auto;
+                width: 50%;
+                margin-left: 20px;
+                .top{
+                    h2{
+                        font-size: 40px;
+                        margin-bottom: 20px;
+
+                    }
+                    p{
+                        margin-bottom: 10px;
+                        color: #383838;
+                        line-height: 20px;
+
+                        font-size: 16px;
+                    }
+                    .device-usage{
+                        width: auto;
+                        display: flex;
+                        p{
+                            // border: 1px solid #000;
+                            display: block;
+                            font-size: 15px;
+                            padding: 7px 10px;
+                            border-radius: 5px;
+                        }
+                        .Firsthand{
+                            border:1px solid $primary-blue;
+                            
+                            color: $primary-blue;
+                        }
+                        .Secondhand{
+                            border:1px solid $primary-green;
+                            
+                            color: $primary-green;
+
+                        }
+                        .Thirdhand{
+                            
+                            border:1px solid #555;
+                            color: #555;
+                        }
+                        .Manyhand{
+                            border:1px solid crimson;
+                            color: crimson;
+                        }
+                    }
+                    .device-maintenance-rate{
+                        width: auto;
+                        display: flex;
+
+                        p{
+                            // border: 1px solid #000;
+                            display: block;
+                            font-size: 15px;
+                            border-radius: 5px;
+                            &:first-child{
+                                margin-right: 5px;
+                            }
+                        }
+                        .goodrate{
+                            color: $primary-green;
+                        }
+                        .midrate{
+                            color: #555;
+                        }
+                        .badrate{
+                            color: crimson;
+                        }
+                    }
+                    .summary{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+                .bottom{
+                    position: absolute;
+                    bottom: 10px;
+                    a{
+                        padding: 10px 20px;
+                        margin-right: 5px;
+                        border-radius: 5px;
+                    }
+                    .acceptOrder{
+                        background-color: $primary-blue;
+                        color: #fff;       
+                    } 
+                    .cancelOrder{
+                        background-color: #383838;
+                        color: #fff;
+                    } 
+
+                }
+            }
+        }
+        @media only screen and (max-width:815px){
+            &{
+                .item-detail{
+                    flex-direction: column;
+                    .item-img{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    .item-content{
+                        width: 100%;
+                        margin-left: 0px;
+                        .top{
+                            margin-bottom: 40px;
+                        }
+                        .bottom{
+
+                            position: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

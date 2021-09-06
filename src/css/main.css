@@ -659,6 +659,12 @@ a {
   color: #fff;
 }
 
+@media only screen and (max-width: 500px) {
+  .orderDeclineView .container {
+    width: 90%;
+  }
+}
+
 .orderDeclineView.orderActive {
   display: flex;
 }
@@ -892,9 +898,280 @@ a {
   }
 }
 
-.container .profile_settings {
-  width: 90%;
+.main_container .availabe_page {
+  width: 100%;
+  height: 100%;
+}
+
+.main_container .availabe_page .available_page_title {
+  margin-bottom: 20px;
+}
+
+.main_container .availabe_page .available_page_title h2 {
+  font-size: 22px;
+}
+
+.main_container .availabe_page .available_page_orders {
+  width: 100%;
   height: auto;
-  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.main_container .availabe_page .available_page_orders .card {
+  width: 100%;
+  min-height: 200px;
+  max-height: auto;
+  background-color: #fff;
+}
+
+.main_container .availabe_page .available_page_orders .card .card-img {
+  width: 100%;
+  height: auto;
+}
+
+.main_container .availabe_page .available_page_orders .card .card-img img {
+  width: 100%;
+}
+
+.main_container .availabe_page .available_page_orders .card .card-content {
+  position: relative;
+  margin: 20px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main_container .availabe_page .available_page_orders .card .card-content .top {
+  margin-bottom: 20px;
+}
+
+.main_container .availabe_page .available_page_orders .card .card-content .top h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.main_container .availabe_page .available_page_orders .card .card-content .top p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #4b4b4b;
+}
+
+@media only screen and (min-width: 1350px) {
+  .main_container .availabe_page .available_page_orders {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .main_container .availabe_page .available_page_orders {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .main_container .availabe_page .available_page_orders {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main_container .availabe_page .available_page_orders {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.main_container .item_details {
+  width: 100%;
+  height: auto;
+}
+
+.main_container .item_details .item-detail {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.main_container .item_details .item-detail .item-img {
+  width: 500px;
+}
+
+.main_container .item_details .item-detail .item-img img {
+  width: 100%;
+}
+
+.main_container .item_details .item-detail .item-content {
+  position: relative;
+  width: auto;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.main_container .item_details .item-detail .item-content .top h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.main_container .item_details .item-detail .item-content .top p {
+  margin-bottom: 10px;
+  color: #383838;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-usage {
+  width: auto;
+  display: flex;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-usage p {
+  display: block;
+  font-size: 15px;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-usage .Firsthand {
+  border: 1px solid #556fe2;
+  color: #556fe2;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-usage .Secondhand {
+  border: 1px solid #07a807;
+  color: #07a807;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-usage .Thirdhand {
+  border: 1px solid #555;
+  color: #555;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-usage .Manyhand {
+  border: 1px solid crimson;
+  color: crimson;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-maintenance-rate {
+  width: auto;
+  display: flex;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-maintenance-rate p {
+  display: block;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-maintenance-rate p:first-child {
+  margin-right: 5px;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-maintenance-rate .goodrate {
+  color: #07a807;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-maintenance-rate .midrate {
+  color: #555;
+}
+
+.main_container .item_details .item-detail .item-content .top .device-maintenance-rate .badrate {
+  color: crimson;
+}
+
+.main_container .item_details .item-detail .item-content .top .summary p {
+  font-size: 14px;
+}
+
+.main_container .item_details .item-detail .item-content .bottom {
+  position: absolute;
+  bottom: 10px;
+}
+
+.main_container .item_details .item-detail .item-content .bottom a {
+  padding: 10px 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.main_container .item_details .item-detail .item-content .bottom .acceptOrder {
+  background-color: #556fe2;
+  color: #fff;
+}
+
+.main_container .item_details .item-detail .item-content .bottom .cancelOrder {
+  background-color: #383838;
+  color: #fff;
+}
+
+@media only screen and (max-width: 815px) {
+  .main_container .item_details .item-detail {
+    flex-direction: column;
+  }
+  .main_container .item_details .item-detail .item-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main_container .item_details .item-detail .item-content {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .main_container .item_details .item-detail .item-content .top {
+    margin-bottom: 40px;
+  }
+  .main_container .item_details .item-detail .item-content .bottom {
+    position: initial;
+  }
+}
+
+.profile_setting {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.profile_setting .title {
+  margin-bottom: 25px;
+}
+
+.profile_setting .title h2 {
+  font-size: 25px;
+}
+
+.profile_setting form {
+  width: 100%;
+  height: auto;
+}
+
+.profile_setting form .form-action {
+  margin-bottom: 15px;
+}
+
+.profile_setting form .form-action input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  outline: none;
+}
+
+.profile_setting form .form-action .group {
+  margin-bottom: 20px;
+}
+
+.profile_setting form .form-action .group:last-child {
+  margin-bottom: 0px;
+}
+
+.profile_setting form button {
+  padding: 10px 25px;
+  background-color: #242424;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */

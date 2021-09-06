@@ -268,7 +268,13 @@
                 
             }
         }
+        @media only screen and (max-width: 500px){
+            &{
+                width:90%;
+            }
+        }
     }
+
 }
 .orderDeclineView.orderActive{
     display: flex;
