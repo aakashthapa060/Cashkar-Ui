@@ -1126,6 +1126,87 @@ a {
   }
 }
 
+.inProgress_page {
+  width: 100%;
+  height: auto;
+}
+
+.inProgress_page .title {
+  margin-bottom: 30px;
+}
+
+.inProgress_page .title h2 {
+  font-size: 25px;
+}
+
+.inProgress_page .inProgress_section {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+.inProgress_page .inProgress_section .card {
+  position: relative;
+  width: 100%;
+  height: atuo;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.inProgress_page .inProgress_section .card .item-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.inProgress_page .inProgress_section .card .item-img img {
+  width: 100%;
+}
+
+.inProgress_page .inProgress_section .card .item-content .top {
+  margin-bottom: 20px;
+}
+
+.inProgress_page .inProgress_section .card .item-content .top h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.inProgress_page .inProgress_section .card .item-content .top p {
+  font-size: 16px;
+  color: #999;
+  line-height: 22px;
+}
+
+.inProgress_page .inProgress_section .card .item-content .bottom {
+  position: inherit;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.inProgress_page .inProgress_section .card .item-content .bottom a {
+  padding: 10px 20px;
+  background-color: #242424;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1350px) {
+  .inProgress_page .inProgress_section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .inProgress_page .inProgress_section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .profile_setting {
   width: 100%;
   height: auto;
