@@ -36,6 +36,59 @@ a {
   color: #556fe2;
 }
 
+.card {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.card .device-title {
+  margin-bottom: 10px;
+}
+
+.card .device-title h2 {
+  font-size: 20px;
+}
+
+.card .device-body {
+  margin-bottom: 20px;
+}
+
+.card .device-body p.main-dis {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.card .device-body p {
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.card .bottom button {
+  padding: 8px 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.card .bottom .accept {
+  background-color: #242424;
+}
+
+.card .bottom .decline {
+  background-color: #ff4646;
+}
+
+.card .bottom .View {
+  background-color: darkgray;
+}
+
 .login_form {
   position: absolute;
   top: 50%;
@@ -412,6 +465,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding: 0px;
 }
 
 .main_container .user-dashboard-info .card .container {
@@ -529,66 +583,10 @@ a {
   grid-gap: 1rem;
 }
 
-.main_container .recentOrders .content .card {
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.main_container .recentOrders .content .card .itemImg {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-.main_container .recentOrders .content .card .itemImg img {
-  width: 100%;
-}
-
-.main_container .recentOrders .content .card .itemContent .top {
-  margin-bottom: 25px;
-  color: #242424;
-}
-
-.main_container .recentOrders .content .card .itemContent .top h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.main_container .recentOrders .content .card .itemContent .top p {
-  font-size: 16px;
-}
-
-.main_container .recentOrders .content .card .itemContent .buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.main_container .recentOrders .content .card .itemContent .buttons .left {
-  width: auto;
-}
-
-.main_container .recentOrders .content .card .itemContent .buttons .left a {
-  padding: 8px 12px;
-  color: #fff;
-  background-color: #556fe2;
-  border-radius: 5px;
-}
-
-.main_container .recentOrders .content .card .itemContent .buttons .left .btn2 {
-  background-color: #ff4646;
-}
-
-.main_container .recentOrders .content .card .itemContent .buttons .right a {
-  padding: 8px 12px;
-  color: #fff;
-  background-color: #07a807;
-  border-radius: 5px;
+@media only screen and (min-width: 1350px) {
+  .main_container .recentOrders .content {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -927,15 +925,6 @@ a {
   background-color: #fff;
 }
 
-.main_container .availabe_page .available_page_orders .card .card-img {
-  width: 100%;
-  height: auto;
-}
-
-.main_container .availabe_page .available_page_orders .card .card-img img {
-  width: 100%;
-}
-
 .main_container .availabe_page .available_page_orders .card .card-content {
   position: relative;
   margin: 20px;
@@ -1240,7 +1229,7 @@ a {
   width: 100%;
   height: atuo;
   background-color: #fff;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
 }
 
@@ -1330,6 +1319,7 @@ a {
   border: 1px solid #e2e2e2;
   border-radius: 5px;
   outline: none;
+  padding: 10px;
 }
 
 .profile_setting form .form-action .group {
